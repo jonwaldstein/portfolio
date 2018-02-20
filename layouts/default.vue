@@ -10,6 +10,9 @@
           <div class="nuxt">
             <nuxt/>
           </div>
+          <div class="is-hidden-tablet">
+            <Footer />
+          </div>
         </main>
       </div>
     </div>

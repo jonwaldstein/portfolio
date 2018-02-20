@@ -1,40 +1,36 @@
 <template lang="html">
 <div>
-  <nav class="navbar is-transparent is-fixed-top">
+  <nav class="navbar is-transparent is-fixed-top container">
+
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">Jon Waldstein</nuxt-link>
-      <div class="navbar-burger burger" v-bind:class="{'is-active': ToggleNav}" v-on:click="navBurgerToggleNav">
+      <!-- <div class="navbar-burger burger" v-bind:class="{'is-active': ToggleNav}" v-on:click="navBurgerToggleNav">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </div> -->
     </div>
 
-    <div class="navbar-menu" v-bind:class="{'is-active': ToggleNav}">
-      <div class="navbar-start">
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <nuxt-link class="navbar-link" to="/about">About</nuxt-link>
-          <div class="navbar-dropdown is-boxed">
-            <nuxt-link class="navbar-item" to="/projects">Project</nuxt-link>
-            <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
-          </div>
-        </div>
-
-      </div>
+    <div class="navbar-menu" style="box-shadow: none;" v-bind:class="{'is-active': ToggleNav}">
 
       <div class="navbar-end">
-        <div class="navbar-item">
-            <div class="control">
-              <a class="button is-primary" v-bind:class="{'is-loading': Wow}" :Disabled="WowGreedy" v-on:click="wowToggle">
-                <span>Wow Me</span>
-              </a>
-            </div>
-        </div>
+        <nuxt-link class="navbar-item" to="/">
+          <Gravatar />
+        </nuxt-link>
+
+        <!-- <div class="control">
+          <a class="button is-primary" v-bind:class="{'is-loading': Wow}" :Disabled="WowGreedy" v-on:click="wowToggle">
+            <span>Wow Me</span>
+          </a>
+        </div> -->
+
       </div>
+
     </div>
+
   </nav>
-  <div v-if="Wow" class="container">
+
+  <!-- <div v-if="Wow" class="container">
 
     <div class="notification is-primary" v-show="windowMessage">
       <button class="delete" v-on:click="deleteNotification"></button>
@@ -51,12 +47,18 @@
       <button class="delete" v-on:click="deleteNotification"></button>
       <p>You already got Wowed, don't be greedy.</p>
     </div>
-  </div>
+  </div> -->
+
 </div>
 </template>
 
 <script>
+import Gravatar from '~/components/Gravatar.vue';
+
 export default {
+  components: {
+    Gravatar
+  },
   data(){
     return{
       ToggleNav: false,
@@ -90,3 +92,20 @@ export default {
   },
 }
 </script>
+
+<style>
+.navbar-brand{
+  flex: 1;
+}
+.navbar, .navbar-menu, .navbar-start, .navbar-end {
+    display: flex;
+    align-items: stretch;
+}
+a.navbar-item:hover,
+a.navbar-item.is-active,
+a.navbar-link:hover,
+a.navbar-link.is-active {
+    background-color: transparent;
+    color: #6BA49A;
+}
+</style>
