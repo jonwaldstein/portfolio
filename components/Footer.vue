@@ -4,13 +4,18 @@
       <p>
         <strong>Jon Waldstein</strong> by <a href="https://github.com/jpwaldstein">Jon Waldstein</a>.
       </p>
-      <p>Copyright, whatever.</p>
+      <p>{{date}} Copyright, whatever.</p>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
+  data(){
+    return{
+        date: new Date().getFullYear()
+    }
+  },
 }
 </script>
 

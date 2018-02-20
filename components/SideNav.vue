@@ -4,14 +4,14 @@
       About
     </p>
     <ul class="menu-list">
-      <nuxt-link to="/about">About</nuxt-link>
+      <nuxt-link to="/about">My Story</nuxt-link>
       <nuxt-link to="/projects">Projects</nuxt-link>
     </ul>
     <p class="menu-label">
       Websites
     </p>
     <ul class="menu-list">
-      <li><a>Wordpress</a></li>
+      <nuxt-link to="/projects/wordpress">Wordpress</nuxt-link>
       <li><a>Woocommerce</a></li>
       <li><a>Shopify</a></li>
     </ul>
@@ -21,7 +21,7 @@
     <ul class="menu-list">
       <li><a>SCSS Utility Classes</a></li>
       <li>
-        <a class="is-active">Active</a>
+        <a>Active</a>
         <ul>
           <li><a>item</a></li>
           <li><a>item</a></li>
@@ -51,4 +51,10 @@ export default {
   overflow-y: scroll;
 
 }
+</style>
+<style lang="css" scoped>
+  a.nuxt-link-active {
+      background-color: #00c4a7;
+      color: #fff;
+  }
 </style>
