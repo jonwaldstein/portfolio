@@ -22,6 +22,7 @@ export default {
 <style lang="css">
 .site-footer{
   border-top: 4px solid gainsboro;
+  margin-top: 50px;
   padding-top: 25px;
   padding-bottom: 25px;
 }

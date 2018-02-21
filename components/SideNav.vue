@@ -1,34 +1,28 @@
 <template lang="html">
   <aside id="side-nav" class="menu column is-hidden-mobile">
-    <p class="menu-label">
-      About
-    </p>
-    <ul class="menu-list">
-      <nuxt-link to="/about">My Story</nuxt-link>
-      <nuxt-link to="/projects">Projects</nuxt-link>
-    </ul>
-    <p class="menu-label">
-      Websites
-    </p>
-    <ul class="menu-list">
-      <nuxt-link to="/projects/wordpress">Wordpress</nuxt-link>
-      <li><a>Woocommerce</a></li>
-      <li><a>Shopify</a></li>
-    </ul>
-    <p class="menu-label">
-      Open Source
-    </p>
-    <ul class="menu-list">
-      <li><a>SCSS Utility Classes</a></li>
-      <li>
-        <a>Active</a>
-        <ul>
-          <li><a>item</a></li>
-          <li><a>item</a></li>
-          <li><a>item</a></li>
-        </ul>
-      </li>
-    </ul>
+    <div class="side-nav">
+      <p class="menu-label">
+        About
+      </p>
+      <ul class="menu-list">
+        <nuxt-link to="/about">My Story</nuxt-link>
+        <nuxt-link to="/this-site">This Site</nuxt-link>
+      </ul>
+      <p class="menu-label">
+        Portfolio
+      </p>
+      <ul class="menu-list">
+        <!-- <li><nuxt-link to="/portfolio" exact>All</nuxt-link></li> -->
+        <li><nuxt-link to="/portfolio/websites">Websites</nuxt-link></li>
+        <!-- <li><nuxt-link to="/portfolio/designs" exact>Designs</nuxt-link></li> -->
+      </ul>
+      <p class="menu-label">
+        Blog
+      </p>
+      <ul class="menu-list">
+        <li><nuxt-link to="/fishtivity" exact>Fishtivity</nuxt-link></li>
+      </ul>
+    </div>
     <Footer />
   </aside>
 </template>

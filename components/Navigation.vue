@@ -4,11 +4,6 @@
 
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">Jon Waldstein</nuxt-link>
-      <!-- <div class="navbar-burger burger" v-bind:class="{'is-active': ToggleNav}" v-on:click="navBurgerToggleNav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div> -->
     </div>
 
     <div class="navbar-menu" style="box-shadow: none;" v-bind:class="{'is-active': ToggleNav}">
@@ -29,7 +24,6 @@
     </div>
 
   </nav>
-
   <!-- <div v-if="Wow" class="container">
 
     <div class="notification is-primary" v-show="windowMessage">
