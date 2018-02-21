@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Jon Waldstein',
+    title: 'Jon Waldstein | web developer RI CT',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portfolio' }
+      { hid: 'description', name: 'This website showcases web developer Jon Waldstein', content: 'Portfolio' }
     ],
     htmlAttrs: {
       class: 'has-navbar-fixed-top'
@@ -21,6 +21,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Open+Sans+Condensed:300|Quicksand:400,500,700|Montserrat:300,400,500' }
     ]
   },
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false }
+  ],
   /*
   ** Customize the progress bar color
   */
