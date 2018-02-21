@@ -16,7 +16,7 @@ export default {
   components: {
     FishtivityBlog
   },
-  mounted: function () {
+  mounted() {
     this.$store.dispatch('loadFishtivityBlog');
   }
 }

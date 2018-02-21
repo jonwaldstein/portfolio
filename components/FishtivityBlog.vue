@@ -1,5 +1,12 @@
 <template lang="html">
   <div class="blog">
+    <div class="spinner" v-show="this.$store.state.loading">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
       <div v-for="post in blog" class="card card-margin-bottom card-max-width" v-bind:key="post.id">
         <div class="card-image">
           <figure class="image">
@@ -33,7 +40,7 @@ export default {
   computed: {
     blog(){
       return this.$store.state.blog;
-    }
+    },
   },
   data(){
     return {

@@ -39,11 +39,12 @@ const createStore = () => {
         },
       ],
       blog: [],
+      loading: false
     },
     actions: {
       loadFishtivityBlog: function ({ commit }) {
+        this.state.loading = true
         axios.get('https://fishtivity.net/wp-json/wp/v2/posts?_embed').then((response) => {
-          console.log(response.data),
           commit('setFishtivityBlog', { blog: response.data })
         }, (err) => {
           console.log(err)
@@ -51,8 +52,9 @@ const createStore = () => {
       }
     },
     mutations: {
-      setFishtivityBlog: (state, { blog }) => {
-        state.blog = blog
+      setFishtivityBlog: (state, { blog, loading }) => {
+        state.blog = blog,
+        state.loading = false
       }
     },
     getters: {
