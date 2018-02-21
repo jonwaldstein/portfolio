@@ -3,7 +3,7 @@
   <nav class="navbar is-transparent is-fixed-top container">
 
     <div class="navbar-brand">
-      <nuxt-link class="navbar-item" to="/">Jon Waldstein</nuxt-link>
+      <nuxt-link class="navbar-item has-text-weight-semibold" to="/">Jon Waldstein</nuxt-link>
     </div>
 
     <div class="navbar-menu" style="box-shadow: none;" v-bind:class="{'is-active': ToggleNav}">
