@@ -3,17 +3,16 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Jon Waldstein | web developer RI CT',
+    title: 'Jon Waldstein | Web Developer RI CT',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'This website showcases web developer Jon Waldstein', content: 'Portfolio' }
+      { hid: 'description', name: 'description', content: 'This website showcases web developer, Jon Waldstein, and his work' }
     ],
     htmlAttrs: {
       class: 'has-navbar-fixed-top'
     },
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
       { src: 'https://use.fontawesome.com/releases/v5.0.6/js/all.js' }
     ],
     link: [
