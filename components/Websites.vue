@@ -1,27 +1,27 @@
 <template lang="html">
-  <div class="projects">
-    <div v-for="project in projects" class="card card-margin-bottom card-max-width" v-bind:key="project.id">
+  <div class="websites">
+    <div v-for="website in websites" class="card card-margin-bottom card-max-width" v-bind:key="website.id">
       <div class="card__header">
-        <h3 class="card--title title is-4">{{project.title}}</h3>
+        <h3 class="card--title title is-4">{{website.title}}</h3>
         <div class="card-content">
-          <div class="content">{{project.description}}</div>
+          <div class="content">{{website.description}}</div>
         </div>
       </div>
       <div class="card-image">
         <figure class="image">
-          <img v-bind:src="project.featured_image" alt="Placeholder image">
+          <img v-bind:src="website.featured_image" alt="Placeholder image">
         </figure>
       </div>
       <div class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a target="_blank" v-bind:href="project.external_url">View Site</a>
+            <a target="_blank" v-bind:href="website.external_url">View Site</a>
           </span>
         </p>
-        <p class="card-footer-item" v-if="project.credits">
+        <p class="card-footer-item" v-if="website.credits">
           <span>
             Credits:
-            <em>{{project.credits}}</em>
+            <em>{{website.credits}}</em>
           </span>
         </p>
       </div>
@@ -31,10 +31,9 @@
 
 <script>
 export default {
-  props: ['projects'],
-  data(){
-    return {
-
+  computed: {
+    websites(){
+      return this.$store.state.websites
     }
   }
 }

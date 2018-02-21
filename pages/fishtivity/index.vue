@@ -4,31 +4,21 @@
       <h2 class="subtitle--link">
         <a href="https://fishtivity.net" target="_blank">Visit Fishtivity.net</a>
       </h2>
-      <Blog v-bind:blog="blog"/>
+      <fishtivity-blog />
   </div>
 </template>
 
 <script>
-import Blog from '~/components/Blog.vue';
+import FishtivityBlog from '~/components/FishtivityBlog.vue';
 import axios from 'axios'
 
 export default {
   components: {
-    Blog
+    FishtivityBlog
   },
-  data(){
-    return{
-      blog: []
-    }
-  },
-  asyncData ({ params }, callback) {
-    axios.get('https://fishtivity.net/wp-json/wp/v2/posts?_embed')
-    .then((response) => {
-      callback(null,
-        { blog: response.data }
-      )
-    })
-  },
+  mounted: function () {
+    this.$store.dispatch('loadFishtivityBlog');
+  }
 }
 </script>
 

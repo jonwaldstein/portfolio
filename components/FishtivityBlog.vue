@@ -30,7 +30,11 @@
 <script>
 
 export default {
-  props: ['blog'],
+  computed: {
+    blog(){
+      return this.$store.state.blog;
+    }
+  },
   data(){
     return {
       siteUrl: 'https://fishtivity.net'
