@@ -17,7 +17,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Open+Sans+Condensed:300|Quicksand:400,500,700|Montserrat:300,400,500' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Open+Sans+Condensed:300|Quicksand:400,500,700|Montserrat:300,400,500' }
     ]
   },
   /*

@@ -1,5 +1,5 @@
 <template lang="html">
-  <aside id="side-nav" class="menu column is-hidden-mobile">
+  <aside id="side-nav" class="menu column is-one-quarter is-hidden-mobile">
     <div class="side-nav">
       <p class="menu-label">
         About
@@ -43,7 +43,7 @@ export default {
   top: 75px;
   bottom: 0;
   overflow-y: scroll;
-
+  padding-left: 25px;
 }
 </style>
 <style lang="css" scoped>

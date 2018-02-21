@@ -1,6 +1,6 @@
 <template lang="html">
   <footer class="site-footer">
-    <div class="content has-text-centered">
+    <div class="content">
       <p>
         <strong>Jon Waldstein</strong> by <a href="https://github.com/jpwaldstein">Jon Waldstein</a>.
       </p>

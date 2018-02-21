@@ -1,14 +1,14 @@
 <template>
   <div>
     <Navigation />
-    <div class="container site-container">
+    <div class="container is-fluid site-container">
       <div class="is-hidden-tablet mobile-nav">
         <nuxt-link class="navbar-item" to="/about">My Story</nuxt-link>
         <nuxt-link class="navbar-item" to="/this-site">This Site</nuxt-link>
         <nuxt-link class="navbar-item" to="/portfolio/websites">Portfolio</nuxt-link>
         <nuxt-link class="navbar-item" to="/fishtivity" exact>Fishtivity</nuxt-link>
       </div>
-      <div class="columns is-8">
+      <div class="columns">
         <side-nav />
       </div>
       <div class="column is-three-quarters is-offset-one-quarter">
