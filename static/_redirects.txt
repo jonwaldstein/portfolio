@@ -1,2 +1,0 @@
-# Redirect domain aliases to primary domain
-jonwaldsteinweb.com ALIAS eager-bassi-c4f671.netlify.com
