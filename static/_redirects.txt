@@ -1,2 +1,2 @@
 # Redirect domain aliases to primary domain
-https://jonwaldsteinweb.com/* https://jonwaldstein.com/:splat 301!
+jonwaldsteinweb.com ALIAS eager-bassi-c4f671.netlify.com
