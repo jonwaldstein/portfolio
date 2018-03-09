@@ -24,7 +24,7 @@
 
             <div class="media-content">
               <p class="title is-4" v-html="post.title.rendered"></p>
-              <p class="subtitle is-6">By: {{post.author_meta.display_name}}</p>
+              <p class="subtitle is-6">By: {{post._embedded['author'][0].name}}</p>
             </div>
           </div>
 
