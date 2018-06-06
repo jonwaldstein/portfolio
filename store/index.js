@@ -7,6 +7,14 @@ const createStore = () => {
       websites: [
         {
           "id": 1,
+          "title": "Guytannos",
+          "description": "A hand-crafted, custom tailored website, built on wordpress",
+          "featured_image": require('~/assets/images/guytannos.png'),
+          "external_url": 'http://guytannosri.com',
+          "credits": ""
+        },
+        {
+          "id": 2,
           "title": "Kidsense Therapy Group",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image": require('~/assets/images/kidsensetherapygroup.jpg'),
@@ -14,7 +22,7 @@ const createStore = () => {
           "credits": ""
         },
         {
-          "id": 2,
+          "id": 3,
           "title": "Glamorous Corset",
           "description": "An e-commerce shop built with woocommerce",
           "featured_image": require('~/assets/images/glamorouscorset.jpg'),
@@ -22,7 +30,7 @@ const createStore = () => {
           "credits": ""
         },
         {
-          "id": 3,
+          "id": 4,
           "title": "Fresh Green Light",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image":  require('~/assets/images/freshgreenlight.jpg'),
@@ -30,7 +38,7 @@ const createStore = () => {
           "credits": "Zero Gravity Marketing"
         },
         {
-          "id": 4,
+          "id": 5,
           "title": "Technique Printers",
           "description": "A simple website built on wordpress",
           "featured_image":  require('~/assets/images/techniqueprinters.jpg'),
