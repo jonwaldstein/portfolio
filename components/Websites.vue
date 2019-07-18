@@ -33,7 +33,7 @@
 export default {
   computed: {
     websites(){
-      return this.$store.state.websites
+      return this.$store.state.websites.slice().reverse()
     }
   }
 }

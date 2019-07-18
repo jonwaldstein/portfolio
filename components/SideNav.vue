@@ -16,12 +16,12 @@
         <li><nuxt-link to="/portfolio/websites">Websites</nuxt-link></li>
         <!-- <li><nuxt-link to="/portfolio/designs" exact>Designs</nuxt-link></li> -->
       </ul>
-      <p class="menu-label">
+      <!-- <p class="menu-label">
         Blog
       </p>
       <ul class="menu-list">
         <li><nuxt-link to="/fishtivity" exact>Fishtivity</nuxt-link></li>
-      </ul>
+      </ul> -->
     </div>
     <Footer />
   </aside>
