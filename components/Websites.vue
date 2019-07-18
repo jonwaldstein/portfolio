@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="websites">
-    <div v-for="website in websites" class="card card-margin-bottom card-max-width" v-bind:key="website.id">
+    <div v-for="website in websites" class="card card-margin-bottom card-max-width" v-bind:key="website.title">
       <div class="card__header">
         <h3 class="card--title title is-4">{{website.title}}</h3>
         <div class="card-content">

@@ -6,7 +6,6 @@ const createStore = () => {
     state: {
       websites: [
         {
-          "id": 1,
           "title": "Technique Printers",
           "description": "A simple website built on wordpress",
           "featured_image":  require('~/assets/images/techniqueprinters.jpg'),
@@ -14,7 +13,6 @@ const createStore = () => {
           "credits": ""
         },
         {
-          "id": 2,
           "title": "Fresh Green Light",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image":  require('~/assets/images/freshgreenlight.jpg'),
@@ -22,7 +20,6 @@ const createStore = () => {
           "credits": "Zero Gravity Marketing"
         },
         {
-          "id": 3,
           "title": "Glamorous Corset",
           "description": "An e-commerce shop built with woocommerce",
           "featured_image": require('~/assets/images/glamorouscorset.jpg'),
@@ -30,7 +27,6 @@ const createStore = () => {
           "credits": ""
         },
         {
-          "id": 4,
           "title": "Kidsense Therapy Group",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image": require('~/assets/images/kidsensetherapygroup.jpg'),
@@ -38,7 +34,6 @@ const createStore = () => {
           "credits": ""
         },
         {
-          "id": 5,
           "title": "Xomad",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image": require('~/assets/images/xomad.png'),
@@ -46,7 +41,41 @@ const createStore = () => {
           "credits": "Digital Surgeons"
         },
         {
-          "id": 6,
+          "title": "Friends of Unfpa",
+          "description": "A hand-crafted, custom tailored website, built on wordpress",
+          "featured_image": require('~/assets/images/unfpa.png'),
+          "external_url": 'https://www.friendsofunfpa.org/',
+          "credits": "Hopsie"
+        },
+        {
+          "title": "PEE DEE Nephrology",
+          "description": "A theme based website built on wordpress",
+          "featured_image": require('~/assets/images/peedee.png'),
+          "external_url": 'http://www.pdnephrology.com',
+          "credits": "Catoe Group"
+        },
+        {
+          "title": "Shainfield Law",
+          "description": "A hand-crafted, custom tailored website, built on wordpress",
+          "featured_image": require('~/assets/images/shainfield.png'),
+          "external_url": 'https://lemonlawnow.com',
+          "credits": "Hopsie"
+        },
+        {
+          "title": "Valley Orthopaedic Specialists",
+          "description": "A hand-crafted, custom tailored website, built on wordpress",
+          "featured_image": require('~/assets/images/vosct.png'),
+          "external_url": 'https://vosct.com',
+          "credits": "Zero Gravity Marketing"
+        },
+        {
+          "title": "Christian Connections for Internationl Health",
+          "description": "A hand-crafted, custom tailored website, built on wordpress",
+          "featured_image": require('~/assets/images/ccih.png'),
+          "external_url": 'http://www.ccih.org',
+          "credits": "Hopsie"
+        },
+        {
           "title": "Guytannos",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image": require('~/assets/images/guytannos.png'),
@@ -54,14 +83,12 @@ const createStore = () => {
           "credits": ""
         },
         {
-          "id": 7,
           "title": "Squeezepods",
           "description": "An e-commerce shop built on shopify",
           "featured_image": require('~/assets/images/squeezepods.png'),
           "external_url": 'https://www.squeezepod.com',
           "credits": "Zero Gravity Marketing"
         }, {
-          "id": 8,
           "title": "Hope and Stetson",
           "description": "An e-commerce shop built on shopify",
           "featured_image": require('~/assets/images/hope-stetson.png'),
@@ -69,7 +96,6 @@ const createStore = () => {
           "credits": "Zero Gravity Marketing"
         },
         {
-          "id": 9,
           "title": "Allied Printing",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image": require('~/assets/images/allied-printing.png'),
@@ -77,7 +103,6 @@ const createStore = () => {
           "credits": "Cronin & Co"
         },
         {
-          "id": 10,
           "title": "The Steward House",
           "description": "A hand-crafted, custom tailored website, built on wordpress",
           "featured_image": require('~/assets/images/steward-house.png'),
