@@ -2,7 +2,7 @@
   <footer class="site-footer">
     <div class="content">
       <p>
-        <strong>Jon Waldstein</strong> by <a href="https://github.com/jpwaldstein">Jon Waldstein</a>.
+        <strong>Jon Waldstein</strong> by <a href="https://github.com/jonwaldstein">Jon Waldstein</a>.
       </p>
       <p>{{date}} Copyright, whatever.</p>
       <div class="contact-links">
