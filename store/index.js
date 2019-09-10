@@ -109,6 +109,13 @@ const createStore = () => {
           "external_url": 'https://www.thestewardhouse.org',
           "credits": "Cronin & Co"
         },
+        {
+          "title": "New Britain Musuem of American Art",
+          "description": "A hand-crafted, custom tailored website, built on Craft CMS",
+          "featured_image": require('~/assets/images/nbmaa.png'),
+          "external_url": 'https://nbmaa.org',
+          "credits": "Zero Gravity Marketing"
+        },
       ],
       blog: [],
       loading: false
