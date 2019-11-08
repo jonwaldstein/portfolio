@@ -116,6 +116,13 @@ const createStore = () => {
           "external_url": 'https://nbmaa.org',
           "credits": "Zero Gravity Marketing"
         },
+        {
+          "title": "Wood Pawcatuck Watershed Association",
+          "description": "A hand-crafted, custom tailored website, built on WordPress",
+          "featured_image": require('~/assets/images/wpwa.png'),
+          "external_url": 'https://wpwa.org',
+          "credits": ""
+        },
       ],
       blog: [],
       loading: false
