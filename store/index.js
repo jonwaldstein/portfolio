@@ -124,28 +124,18 @@ const createStore = () => {
           "credits": ""
         },
       ],
+      plugins: [
+          {
+              "title": "Blocks for Wordpress",
+              "description": "Managing events on WordPress can be a challenge. These days we have many great solutions for managing our events outside of WordPress like Eventbrite. This plugin helps bridge the gap between the two platforms while retaining the great user interface and experience that Eventbrite provides.",
+              "featured_image": require('~/assets/images/blocks-for-eventbrite.jpg'),
+              "external_url": 'https://wordpress.org/plugins/blocks-for-eventbrite/',
+              "credits": ""
+          },
+      ],
       blog: [],
       loading: false
     },
-    actions: {
-      loadFishtivityBlog: function ({ commit }) {
-        this.state.loading = true
-        axios.get('https://fishtivity.net/wp-json/wp/v2/posts?_embed').then((response) => {
-          commit('setFishtivityBlog', { blog: response.data })
-        }, (err) => {
-          console.log(err)
-        })
-      }
-    },
-    mutations: {
-      setFishtivityBlog: (state, { blog, loading }) => {
-        state.blog = blog,
-        state.loading = false
-      }
-    },
-    getters: {
-
-    }
   })
 }
 

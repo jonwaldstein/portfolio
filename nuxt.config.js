@@ -52,9 +52,4 @@ module.exports = {
     vendor: ["axios"]
   },
   css: ["bulma", "@/assets/css/main.scss", "@/assets/css/main.css"],
-  modules: ["@nuxtjs/axios", "@nuxtjs/proxy"],
-
-  axios: {
-    proxy: true // Can be also an object with default options
-  }
 };

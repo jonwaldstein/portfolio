@@ -6,19 +6,11 @@
 </template>
 
 <script>
-import Websites from '~/components/Websites.vue';
+import Websites from "~/components/Websites.vue";
 
 export default {
   components: {
-    Websites
+    Websites,
   },
-  data(){
-    return{
-
-    }
-  }
-}
+};
 </script>
-
-<style lang="css">
-</style>

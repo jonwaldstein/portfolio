@@ -9,11 +9,3 @@
     <h3 class="is-size-4" style="margin-bottom: 25px;">Below are some examples of my work:</h3>
   </div>
 </template>
-
-<script>
-export default {
-}
-</script>
-
-<style lang="css">
-</style>
