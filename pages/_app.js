@@ -1,7 +1,0 @@
-import '../styles/main.scss';
-import 'bulma/css/bulma.css';
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
-
