@@ -24,6 +24,9 @@
     "autoprefixer": "^10.4.20"
   },
   "keywords": [],
+  "engines": {
+    "node": ">=18.16.0"
+  },
   "volta": {
     "node": "22.13.0"
   }
