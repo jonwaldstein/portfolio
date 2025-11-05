@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, credits }) => (
   <div className="md max-w-[544px] p-4 md:w-1/2">
     <div
       className={`${
@@ -39,6 +39,7 @@ const Card = ({ title, description, imgSrc, href }) => (
           )}
         </h2>
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <div className="flex flex-row justify-between items-center">
         {href && (
           <Link
             href={href}
@@ -48,6 +49,10 @@ const Card = ({ title, description, imgSrc, href }) => (
             Learn more &rarr;
           </Link>
         )}
+        {credits && (
+          <span className="text-gray-500 dark:text-gray-400">Credits: <span className="italic">{credits}</span></span>
+        )}
+        </div>
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@ const siteMetadata = {
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'jpwaldstein@gmail.com',
   github: 'https://github.com/jonwaldstein',
-  x: 'https://twitter.com/x',
+  //x: 'https://twitter.com/x',
   //youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com/in/jon-waldstein/',
   locale: 'en-US',
