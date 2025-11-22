@@ -1,9 +1,10 @@
 import Plugins from '../../../components/Plugins';
+import PageTitle from '../../../components/PageTitle';
 
 export default function PluginsPage() {
   return (
     <div>
-      <h1 className="text-3xl font-light tracking-wide text-gray-800 pb-4">Plugins</h1>
+      <PageTitle title="Plugins" />
       <Plugins />
     </div>
   );

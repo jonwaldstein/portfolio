@@ -1,9 +1,10 @@
 import Websites from '../../../components/Websites';
+import PageTitle from '../../../components/PageTitle';
 
 export default function WebsitesPage() {
   return (
         <div>
-            <h1 className="text-3xl font-light tracking-wide text-gray-800 pb-4">Websites</h1>
+            <PageTitle title="Websites" />
             <Websites />
         </div>
   );
